@@ -45,7 +45,7 @@ header {
   .nav-bar {
     display: flex;
     margin: 15px 0 0 0;
-    justify-content: space-evenly;
+    justify-content: center;
     ul {
       display: flex;
       list-style: none;
@@ -53,12 +53,21 @@ header {
       li {
         border: 1px solid #f45800;
         border-bottom: none;
-        padding: 20px 30px 20px 30px;
+        padding: 20px 0px;
+        width: 110px;
+        text-align: center;
         transition: 0.16s linear all;
         &:hover {
           color: #f8945f;
           cursor: pointer;
           background-color: #111;
+        }
+      }
+      .caua {
+        padding: 0px 140px;
+        &:hover {
+          cursor: default;
+          background-color: #000;
         }
       }
     }

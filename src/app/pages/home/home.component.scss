@@ -217,21 +217,49 @@ button {
 }
 
 .container-services {
+  padding-top: 7rem;
   background: linear-gradient(#922c00, #cf5b09);
   color: #fff;
+  h1 {
+    text-align: start;
+    width: 60%;
+    margin: 0 auto 2.5rem;
+    font-weight: 600;
+  }
   .services {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
     .article-services {
       display: flex;
+      align-items: start;
       img {
+        height: 40px;
+        width: 50px;
+        object-fit: contain;
+        margin-right: 20px;
+      }
+      .shovel {
         height: 60px;
         width: 70px;
       }
+      h3 {
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: underline;
+        white-space: pre;
+      }
+      p {
+        width: 95%;
+        text-align: left;
+      }
     }
   }
+}
+
+.highlight-projects {
+  background: linear-gradient(#cf5b09, #FF904D);
 }
