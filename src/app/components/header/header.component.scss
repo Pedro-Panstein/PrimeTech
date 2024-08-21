@@ -1,9 +1,12 @@
+$fundo: #000;
+$texto: #fff;
+
 header {
   position: sticky;
   top: 0px;
   z-index: 10;
-  background-color: #000;
-  color: #fff;
+  background-color: $fundo;
+  color: $texto;
   padding-top: 20px;
   border: 2px solid #f45800;
   .header {
@@ -60,7 +63,6 @@ header {
         &:hover {
           color: #f8945f;
           cursor: pointer;
-          background-color: #111;
         }
       }
       .caua {
@@ -81,8 +83,29 @@ header {
       border-bottom: none;
       transition: 0.3s;
       &:hover {
-        color: #f45800;
+        color: $texto;
         background: transparent;
+      }
+    }
+  }
+  .theme-button{
+    position: absolute;
+    right: 10px;
+    height: 10%;
+    top: 35%;
+    bottom: 50%;
+    button {
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0px ;
+      border-radius: 10px;
+      outline: none;
+      background-color: transparent;
+      border: 2px solid $texto;
+      mat-icon {
+        color: $texto;
       }
     }
   }
