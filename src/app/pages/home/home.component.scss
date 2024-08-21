@@ -261,5 +261,40 @@ button {
 }
 
 .highlight-projects {
-  background: linear-gradient(#cf5b09, #FF904D);
+  background: linear-gradient(#cf5b09, #ff904d);
+  text-align: center;
+  padding: 15% 0% 10% 0%;
+  h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+    -webkit-text-stroke: 4px;
+    -webkit-text-stroke-color: #000;
+    margin-bottom: 3rem;
+  }
+  .article-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    .articles {
+      position: relative;
+      z-index: 1;
+      img {
+        height: 35vh;
+        width: 22vw;
+      }
+      h2 {
+        width: 80%;
+        position: absolute;
+        bottom: 10px;
+        right: 10%;
+        left: 10%;
+        z-index: 10;
+        text-align: center;
+        color: #fff;
+        font-size: 3em;
+      }
+    }
+  }
 }
